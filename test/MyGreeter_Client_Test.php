@@ -1,4 +1,9 @@
 <?php
+/*
+ * @Descripttion: 
+ * @Author: zhangwei
+ * @Date: 2020-05-18 22:55:30
+ */ 
 require_once realpath('../').'/vendor/autoload.php';
 require_once realpath('../').'/MyGreeter/Client.php';
 
@@ -21,7 +26,6 @@ class MyGreeter_Client_Test extends PHPUnit_Framework_TestCase
 
     public function test_getGreeting()
     {
-        var_dump($this->greeter->getGreeting());die;
         $this->assertTrue(
             strlen($this->greeter->getGreeting()) > 0
         );
